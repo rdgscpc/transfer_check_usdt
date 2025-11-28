@@ -1,0 +1,19 @@
+📌 Como usar
+1️⃣ Criar o .env
+
+Edite o arquivo:
+
+cp .env.example .env
+nano .env
+
+
+Preencha com suas chaves e tokens.
+
+2️⃣ Build + Start
+docker-compose up --build -d
+
+3️⃣ Ver logs
+docker-compose logs -f
+
+4️⃣ Parar
+docker-compose down
