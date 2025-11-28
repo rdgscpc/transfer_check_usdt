@@ -10,23 +10,24 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 TELEGRAM_TOKEN = "8445853763:AAFvENSmBsxwJgsUclQMA8UXLtyjbZNvGDU"
 CHAT_IDS = ["375132125", "5416461659"]
 
+#Troque pelo seu INFURA
 INFURA_URL = "https://polygon-mainnet.infura.io/v3/000"
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 # Wallets e chaves privadas
 PRIVATE_KEY = "000"
-wallet_origem = w3.to_checksum_address("0x8c8A7dA3Fc5d1761B2b8331Dac2CAa7775b1B484")
+wallet_origem = w3.to_checksum_address("0x...")
 
 PRIVATE_KEY_SA = 'a6c4b38c3c7f612b0e6bf6a393ecf9bc6ad9e7072ddb30c2a7b3f7dc2773d01c'
-wallet_origem_sa = w3.to_checksum_address("0xaa92af99389cde1edf23c2188d6a92343a3a0dca")
+wallet_origem_sa = w3.to_checksum_address("0x...")
 
 PRIVATE_KEY_INVEST = "000"
-wallet_origem_invest = w3.to_checksum_address("0x7f5423d3adf298a3342c2ab01d5da87f0dbc5a59")
+wallet_origem_invest = w3.to_checksum_address("0x...")
 
 PRIVATE_KEY_CUSTOS = "000"
-wallet_origem_custos = w3.to_checksum_address("0x55a8ae01b900968648dcc449d7240af4cef20f31")
+wallet_origem_custos = w3.to_checksum_address("0x...")
 
-wallet_destino = w3.to_checksum_address("0x2C87254a74497EA5733e72efa8E6586671eaC99d")
+wallet_destino = w3.to_checksum_address("0x...")
 
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/"
 
