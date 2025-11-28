@@ -18,7 +18,7 @@ w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 PRIVATE_KEY = "000"
 wallet_origem = w3.to_checksum_address("0x...")
 
-PRIVATE_KEY_SA = 'a6c4b38c3c7f612b0e6bf6a393ecf9bc6ad9e7072ddb30c2a7b3f7dc2773d01c'
+PRIVATE_KEY_SA = '000'
 wallet_origem_sa = w3.to_checksum_address("0x...")
 
 PRIVATE_KEY_INVEST = "000"
