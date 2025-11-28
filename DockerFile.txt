@@ -1,0 +1,27 @@
+# Imagem base
+FROM python:3.10-slim
+
+# Diretório de trabalho dentro do container
+WORKDIR /app
+
+# Instalar dependências do sistema
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copiar requirements
+COPY requirements.txt .
+
+# Instalar dependências Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar todo o projeto
+COPY . .
+
+# Expor nenhuma porta (é um bot, não serviço web)
+# ENV é carregado pelo docker-compose
+
+# Comando padrão
+CMD ["python", "bot.py"]
