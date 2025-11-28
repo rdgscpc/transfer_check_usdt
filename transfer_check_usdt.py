@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 # CONFIGURAÇÕES
 # ================================
 
-TELEGRAM_TOKEN = "8445853763:AAFvENSmBsxwJgsUclQMA8UXLtyjbZNvGDU"
+TELEGRAM_TOKEN = "8445853763:000"
 
 #CHAT ID Telegram
 CHAT_IDS = ["000", "000"]
