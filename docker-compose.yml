@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  bot-usdt:
+    build: .
+    container_name: bot-usdt
+    restart: always  # reinicia se travar
+    env_file:
+      - .env  # carrega suas chaves e tokens
+    volumes:
+      - ./logs:/app/logs  # mantém logs fora do container
+    networks:
+      - bot-net
+
+networks:
+  bot-net:
+    driver: bridge
