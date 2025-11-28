@@ -8,7 +8,9 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 # ================================
 
 TELEGRAM_TOKEN = "8445853763:AAFvENSmBsxwJgsUclQMA8UXLtyjbZNvGDU"
-CHAT_IDS = ["375132125", "5416461659"]
+
+#CHAT ID Telegram
+CHAT_IDS = ["000", "000"]
 
 #Troque pelo seu INFURA
 INFURA_URL = "https://polygon-mainnet.infura.io/v3/000"
