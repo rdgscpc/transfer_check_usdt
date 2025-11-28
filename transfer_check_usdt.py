@@ -10,7 +10,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 TELEGRAM_TOKEN = "8445853763:AAFvENSmBsxwJgsUclQMA8UXLtyjbZNvGDU"
 CHAT_IDS = ["375132125", "5416461659"]
 
-INFURA_URL = "https://polygon-mainnet.infura.io/v3/9bd4cbd57ed6488fb15e64a54c3e010c"
+INFURA_URL = "https://polygon-mainnet.infura.io/v3/000"
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 # Wallets e chaves privadas
